@@ -3,7 +3,7 @@ import moment from 'moment'
 export default [
   {
     title: '0',
-    date: moment().format('DD, MMMM, YYYY'),
+    date: moment().format('DD. MMMM YYYY'),
     categories: ['Tech Chulture', 'Tech News'],
     link: '#',
     image: '1.jpg',
