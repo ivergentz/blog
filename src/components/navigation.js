@@ -23,14 +23,16 @@ const navLinks = [
 export default function Navigation() {
   return (
     <nav className="site-navigation">
-      <span>influgentzer blog</span>
-      <ul>
-        {navLinks.map((link, index) => (
-          <li key={index}>
-            <Link to={link.path}>{link.title}</Link>
-          </li>
-        ))}
-      </ul>
+      <span className="menu-title">influgentzer blog</span>
+      <div>
+        <ul>
+          {navLinks.map((link, index) => (
+            <li key={index}>
+              <Link to={link.path}>{link.title}</Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </nav>
   )
 }
