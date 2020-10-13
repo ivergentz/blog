@@ -9,7 +9,7 @@ export default [
     image: '1.jpg',
   },
   {
-    title: 'Can you Coasdflkjadsöfgjdfsglde by Yourself',
+    title: 'Ich bin das 2. Element',
     date: moment().format('DD, MMMM, YYYY'),
     categories: ['Tech Chulture'],
     link: '#',

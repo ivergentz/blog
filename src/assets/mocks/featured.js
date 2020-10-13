@@ -2,31 +2,31 @@ import moment from 'moment'
 
 export default [
   {
-    title: 'Can you Code',
+    title: '0',
     date: moment().format('DD, MMMM, YYYY'),
-    categories: ['Tech Culture', 'Tech News'],
+    categories: ['Tech Chulture', 'Tech News'],
     link: '#',
-    image: 'src=https://source.unsplash.com/random',
+    image: '1.jpg',
   },
   {
-    title: 'Can you Code by Yourself',
+    title: '1',
     date: moment().format('DD, MMMM, YYYY'),
     categories: ['Cloud'],
     link: '#',
-    image: 'src=https://source.unsplash.com/random',
+    image: '2.jpg',
   },
   {
-    title: 'Harlem Shake',
+    title: '2',
     date: moment().format('DD, MMMM, YYYY'),
-    categories: ['Activities'],
+    categories: ['Vue'],
     link: '#',
-    image: 'src=https://source.unsplash.com/random',
+    image: '3.jpg',
   },
   {
-    title: 'Basketball Season 2020',
+    title: '3',
     date: moment().format('DD, MMMM, YYYY'),
-    categories: ['Sports'],
+    categories: ['Tech Chulture'],
     link: '#',
-    image: 'src=https://source.unsplash.com/random',
+    image: '4.jpg',
   },
 ]

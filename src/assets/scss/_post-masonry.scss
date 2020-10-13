@@ -2,3 +2,15 @@
   display: grid;
   grid-gap: 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .masonry {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .masonry-post {
+    .last-child {
+    }
+  }
+}

@@ -27,7 +27,10 @@ export default function Navigation({ user }) {
   return (
     <nav className="site-navigation" role="navigation">
       <span className="menu-title">influgentzer blog</span>
-      <div className={`menu-content-container ${menuActive && 'active'}`}>
+      <div
+        className={`menu-content-container ${menuActive && 'active'}`}
+        onClick={() => setMenuActive(!menuActive)}
+      >
         <ul>
           {navLinks.map((link, index) => (
             <li key={index}>
