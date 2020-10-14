@@ -5,8 +5,7 @@
   display: flex;
   justify-content: space-between;
   color: $text-color;
-  position: sticky;
-  position: -webkit-sticky; /* Safari */
+  position: fixed;
   top: 0;
   z-index: 100;
 

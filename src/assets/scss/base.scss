@@ -1,8 +1,10 @@
-@import './_variables';
-@import './_masonry-post';
-@import './_navigation';
+@import './variables';
+@import './masonry-post';
+@import './navigation';
 @import './home';
 @import './post-masonry';
+@import './tag-row';
+@import './post-grid';
 
 html body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
