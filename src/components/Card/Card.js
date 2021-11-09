@@ -7,18 +7,27 @@ const Card = ({ cards }) => {
     <Container>
       {cards.map(card => (
         <CardSection key={card.id}>
-          <Teaser>{card.teaser}</Teaser>
-          <Header>{card.header}</Header>
-          <PrevImg src={card.img} alt="" />
-          <TeaserText>{card.teasertext}</TeaserText>
-          <Link
-            to={{
-              pathname: `/blog-entry/${card.id}`,
-              state: { cards: card },
+          <BgImg
+            style={{
+              backgroundImage: `url(${card.img})`,
             }}
+            alt=""
+            url={card.img}
           >
-            <Button>weiterlesen...</Button>
-          </Link>
+            <TextContainer>
+              <Teaser>{card.teaser}</Teaser>
+              <Header>{card.header}</Header>
+              <TeaserText>{card.teasertext}</TeaserText>
+              <Link
+                to={{
+                  pathname: `/blog-entry/${card.id}`,
+                  state: { cards: card },
+                }}
+              >
+                <Button>weiterlesen...</Button>
+              </Link>
+            </TextContainer>
+          </BgImg>
         </CardSection>
       ))}
     </Container>
@@ -35,10 +44,23 @@ const Container = styled.section`
 `
 
 const CardSection = styled.div`
-  background: var(--bright-blue);
+  position: relative;
+  height: 25rem;
   border-radius: 10px;
   margin-bottom: 10vh;
-  padding: 3vh;
+`
+
+const BgImg = styled.div`
+  height: 100%;
+  border-radius: 1rem;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+`
+const TextContainer = styled.div`
+  position: absolute;
+  bottom: 0;
+  margin: 0 0 1.5rem 1rem;
 `
 const Teaser = styled.h3`
   color: var(--yellow);
@@ -48,13 +70,6 @@ const Teaser = styled.h3`
 const Header = styled.h2`
   color: var(--dark-orange);
   font-size: 1.7rem;
-`
-
-const PrevImg = styled.img`
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  margin: 3vh auto;
 `
 
 const TeaserText = styled.p`

@@ -1,5 +1,5 @@
-import Hamburger from 'hamburger-react'
 import React, { useEffect, useState } from 'react'
+import { FaBars } from 'react-icons/fa'
 import styled from 'styled-components'
 
 const Header = ({ toggle }) => {
@@ -18,7 +18,7 @@ const Header = ({ toggle }) => {
       <LogoContainer>
         <Logo>Ich brauch' Internet</Logo>
         <div onClick={toggle}>
-          <Hamburger />
+          <BurgerMenu />
         </div>
       </LogoContainer>
     </Container>
@@ -50,4 +50,9 @@ const LogoContainer = styled.div`
 
 const Logo = styled.h1`
   margin: 0 0 0 7vw;
+`
+
+const BurgerMenu = styled(FaBars)`
+  font-size: 2rem;
+  cursor: pointer;
 `
