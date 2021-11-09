@@ -21,7 +21,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: Open-Sans, Helvetica, Sans-Serif;
     font-size: 117.5%;
-    background: var(--dark-blue);
+    background: #fff;
   }
 `
 
